@@ -1,0 +1,666 @@
+@import url('https://fonts.googleapis.com/css2?family=Anton&family=Archivo+Black&family=Caveat:wght@400;500;600;700&family=Comforter&family=Fasthand&family=Fjalla+One&family=Fugaz+One&family=Golos+Text:wght@400;500;600;700;800;900&family=Gravitas+One&family=Josefin+Sans:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;1,100;1,200;1,300;1,400;1,500;1,600;1,700&family=Lilita+One&family=Lobster&family=Mukta:wght@200;300;400;500;600;700;800&family=Pacifico&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,900&family=Righteous&family=Roboto+Mono:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;1,100;1,200;1,300;1,400;1,500;1,600;1,700&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&family=Rowdies:wght@300;400;700&family=Secular+One&family=Teko:wght@300;400;500;600;700&family=Tilt+Neon&family=Ubuntu:ital,wght@0,300;0,400;0,500;0,700;1,300;1,400;1,500;1,700&display=swap');
+
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    border: none;
+    list-style: none;
+    text-decoration: none;
+}
+
+
+
+html,body{
+    background-color: whitesmoke;
+    overflow-x: auto;
+    transition: 0.3s ease-in-out;
+}
+
+header{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: whitesmoke;
+    height: 11vh;
+    width: 100%;
+    max-width: 100%;
+    font-family: 'Poppins', sans-serif;
+}
+
+.logo{
+    padding-left: 10px;
+    display: flex;
+    align-items: center;
+}
+
+.logo h1{
+    font-size: 25px;
+}
+
+.logo img{
+    height: 60px;
+}
+
+ul{
+    display: flex;
+    padding-right: 10px;
+}
+
+ul li a{
+    color: #333;
+    padding: 20px;
+    font-size: 17px;
+    transition: 0.3s ease-in-out;
+}
+
+ul li a:hover{
+    opacity: 0.6;
+}
+
+.partePretaDepoisDoHeader{
+    display: flex;
+    justify-content: center;
+    background-color: black;
+    color: white;
+    height: 4vh;
+    width: 100%;
+    max-width: 100%;
+}
+
+.partePretaDepoisDoHeader H4{
+    padding-top: 1px;
+    font-family: 'Poppins', sans-serif;
+    font-size: 14px;
+}
+
+main{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 10%;
+    font-family: 'Archivo Black', sans-serif;
+    border-bottom: 1px solid black;
+    padding-bottom: 100px;
+}
+
+.textos1Main{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+}
+
+.textos1Main h1{
+    font-size: 60px;
+    font-weight: bold;
+}
+
+.texto2Main{
+    margin-top: 100px;
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+
+.spanTexto2{
+    margin-top: 20px;
+}
+
+.spanTexto2 span{
+    margin-right: 10px;
+    background-color: black;
+    color: white;
+    border-radius: 50%;
+    padding: 5px;
+    padding-bottom: 1px;
+    cursor: pointer;
+}
+
+.texto2Main p{
+    font-weight: 600;
+}
+
+section{
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    margin-top: 10%;
+}
+
+.cultoFamliaTexto h1{
+    font-size: 35px;
+    font-family: 'Poppins', sans-serif;
+    color: black;
+}
+
+.cultoFamliaTexto p{
+    font-family:'Poppins', sans-serif;
+    text-align: center;
+    font-weight: 500;
+}
+
+.cultoFamliaImg img{
+    height: 320px;
+    width: 400px;
+    border-radius: 10px;
+    box-shadow: 2px 2px 5px black;
+}
+
+.cultoFamliaImg p{
+    font-family: 'Poppins', sans-serif;
+    font-size: 20px;
+    text-align: center;
+}
+
+.fundoSecao2{
+    background: rgba(3,0,12,0.9) url(imgs/funcoSeçao2.jpeg);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-blend-mode: darken;
+    height: 100vh;
+    width: 100%;
+    max-width: 100%;
+    margin-top: 100px;
+}
+
+.conteudoFundoSecao2{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding-top: 2%;
+}
+
+.fundoSecao2 h1{
+    color: white;
+    font-family: 'Archivo Black', sans-serif;
+    font-size: 17px;
+    padding-top: 10px;
+    padding-left: 10px;
+}
+
+.TextoSecao2 img{
+    border-radius: 10px;
+}
+
+.BatismoBotao{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.BatismoBotao button{
+    background-color: transparent;
+    color: white;
+    border: 2px solid white;
+    border-radius: 7px;
+    padding: 5px;
+    width: 200px;
+    margin-top: 10px;
+    cursor: pointer;
+    transition: 0.3s ease-in-out;
+}
+
+.BatismoBotao button:hover{
+    background-color: white;
+    color: black;
+    border: none;
+}
+
+.textoBatismo{
+    height: 400px;
+}
+
+.eventoTextoH1{
+    font-family: 'Archivo Black', sans-serif;
+    text-align: center;
+    margin-top: 50px;
+}
+
+.eventoTextoH1 img{
+    height: 100px;
+}
+
+.eventoTextoH1 button{
+    background-color: black;
+    color: white;
+    padding: 7px;
+    margin-top: 20px;
+    border-radius: 4px;
+    width: 120px;
+    cursor: pointer;
+    transition: 0.3s ease-in-out;
+}
+
+.eventoTextoH1 span{
+    padding-left: 5px;
+    padding-top: 5px;
+    text-align: center;
+}
+
+.eventoTextoH1 button:hover{
+    opacity: 0.5;
+}
+
+.eventoDaSemana{
+    display: none;
+    text-align: center;
+    margin-top: 30px;
+    padding-top: 30px;
+    margin-bottom: 30px;
+    background: rgba(3,0,12,0.9) url(imgs/funcoSeçao2.jpeg);
+    color: white;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-blend-mode: darken;
+    height: 400px;
+    width: 100%;
+    font-family: 'Archivo Black', sans-serif;
+    box-shadow: 5px 5px 5px black;
+}
+
+.eventoDaSemana h3, p{
+    margin-bottom: 10px;
+}
+
+.eventoDaSemana p{
+    font-style: italic;
+    opacity: 0.3;
+}
+
+.eventoDaSemana img{
+    height: 30px;
+}
+
+.eventoDaSemana.new{
+    display: block;
+}
+
+.quemSomosH1{
+    text-align: center;
+    margin-top: 300px;
+    font-size: 20px;
+    font-family: 'Archivo Black', sans-serif;
+}
+
+.quemSomosTexto{
+    display: flex;
+    justify-content: center;
+    margin-top: 50px;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+.quemSomosTexto p{
+    opacity: 0.8;
+}
+
+.amorADeus{
+    margin-top: 100px;
+    margin-bottom: 30px;
+    border-bottom: 2px solid #333;
+}
+
+.amorADeus h1{
+    text-align: center;
+    font-family: 'Archivo Black', sans-serif;
+}
+
+.amorADeus p{
+    text-align: center;
+    opacity: 0.8;
+    font-family: Arial, Helvetica, sans-serif;
+    margin-top: 50px;
+}
+
+.containerMapa{
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+}
+
+.mapBox{
+    position: relative;
+    width: 600px;
+    height: 500px;
+}
+
+.mapBox iframe{
+    width: 100%;
+    height: 100%;
+}
+
+.contatoMapa{
+    color: black;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    gap: 5px;
+}
+
+.contatoMapa h1{
+    font-family: 'Archivo Black', sans-serif;
+    font-style: oblique;
+    font-weight: 200;
+    margin-bottom: 50px;
+}
+
+
+.contatoMapa span{
+    font-size: 30px;
+    margin-top: 40px;
+    cursor: pointer;
+    color: black;
+}
+
+.emailContatoMapa p{
+    font-weight: bold;
+    font-family: 'Archivo Black', sans-serif;
+    margin-top: 10px;
+    font-size: 12px;
+}
+
+.localizacao{
+    opacity: 0.7;
+    font-style: oblique;
+}
+
+footer{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-top: 60px;
+    background-color: black;
+    color: white;
+    height: 400px;
+    width: 100%;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+}
+
+
+.logoFooter{
+    display: flex;
+    align-items: center;
+}
+
+.parte1Footer{
+    padding-left: 15px;
+}
+
+.parte1Footer a{
+    color: white;
+}
+
+.parte1Footer span{
+    font-size: 30px;
+    padding-right: 20px;
+    transition: 0.3s ease-in-out;
+}
+
+.parte1Footer span:hover{
+    opacity: 0.7;
+}
+
+.linksFooter{
+    padding-top: 30px;
+}
+
+.logoFooter img{
+    height: 70px;
+}
+
+
+.parte2Footer p{
+    padding: 10px;
+    opacity: 0.7;
+    transition: 0.3s ease-in-out;
+}
+
+.parte2Footer p:hover{
+    opacity: 1;
+}
+
+.parte3Footer{
+    padding-right: 15px;
+}
+
+.parte3Footer p{
+    opacity: 0.7;
+    padding-top: 10px;
+    color: white;
+    transition: 0.3s ease-in-out;
+}
+
+.parte3Footer p:hover{
+    opacity: 1;
+}
+
+.dark body{
+    background-color: black;
+}
+
+.dark{
+    background-color: black;
+    color: white;
+}
+
+.dark .iconLua{
+    color: black;
+}
+
+.dark .partePretaDepoisDoHeader{
+    background-color: white;
+    color: black;
+}
+
+.dark .spanTexto2 span{
+    background-color: white;
+    color: black;
+}
+
+.dark .logo h1{
+    color: black;
+}
+
+.dark .cultoFamliaTexto h1{
+    color: white;
+}
+
+.dark .contatoMapa{
+    color: white;
+}
+
+.dark .contatoMapa span{
+    color: white;
+}
+
+.dark .eventoTextoH1 button{
+    background-color: white;
+    color: black;
+}
+
+.dark footer{
+    border-top: 2px solid white;
+}
+
+.dark main{
+    border-color: white;
+}
+
+@media screen and (max-width:600px){
+    ul a{
+        display: none;
+    }
+
+    header{
+        justify-content: space-between;
+        align-items: center;
+    }
+
+
+
+    .textos1Main h1{
+        font-size: 35px;
+        text-align: center;
+    }
+
+    .texto2Main{
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        text-align: center;
+    }
+
+    .texto2Main p{
+        font-size: 13px;
+    }
+
+    .texto2Main span{
+        font-size: 13px;
+    }
+
+    section{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        text-align: center;
+    }
+
+    .cultoFamliaTexto h1{
+        font-size: 20px;
+    }
+
+    .cultoFamliaTexto p{
+        font-size: 11px;
+    }
+
+    .cultoFamliaImg img{
+        height: 140px;
+        width: 240px;
+    }
+
+    .fundoSecao2 h1{
+        display: none;
+    }
+
+    
+
+    .textoBatismo{
+        height: 250px;
+    }
+
+    .BatismoBotao img{
+        height: 240px;
+    }
+
+    .conteudoFundoSecao2{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        padding: 20px;
+    }
+
+    .conteudoFundoSecao2 > div {
+        margin: 10px;
+    }
+
+    .eventoTextoH1 h1{
+        font-size: 20px;
+    }
+
+    .eventoTextoH1 img{
+        height: 70px;
+    }
+
+    .quemSomosH1 h1{
+        font-size: 30px;
+    }
+
+    .quemSomosTexto{
+        text-align: center;
+        font-size: 10px;
+    }
+
+    .amorADeus h1{
+        font-size: 22px;
+    }
+
+    .amorADeus p{
+        font-size: 10px;
+    }
+
+
+    .containerMapa{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        text-align: center;
+    }
+
+    .mapBox{
+        width: 320px;
+        height: 320px;
+    }
+
+    .contatoMapa h1{
+        font-size: 22px;
+        margin-top: 30px;
+    }
+
+    footer{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        text-align: center;
+        height: 560px;
+    }
+
+    .parte1Footer img{
+        height: 50px;
+    }
+
+    .parte1Footer h3{
+        font-size: 14px;
+    }
+
+    .linksFooter span{
+        font-size: 17px;
+    }
+
+    .parte2Footer h1{
+        font-size: 20px;
+    }
+
+    .parte3Footer h1{
+        font-size: 20px;
+    }
+}
+
+@media screen and (min-width:768px) and (max-width:1024px){
+    .partePretaDepoisDoHeader h4{
+        padding-top: 10px;
+    }
+
+    section{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        text-align: center;
+        gap: 50px;
+    }
+
+    .fundoSecao2 h1{
+        display: none;
+    }
+
+    .conteudoFundoSecao2{
+        padding-top: 130px;
+    }
+
+    .quemSomosTexto{
+        text-align: center;
+    }
+}
